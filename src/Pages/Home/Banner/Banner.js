@@ -3,10 +3,10 @@ import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <div>
-            <Carousel fade>
+        <div  className='banner'>
+            <Carousel style={{margin: 0}} fade>
   <Carousel.Item>
-    <img
+    <img style={{height:'500px'}}
       className="d-block w-100"
       src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="First slide"
@@ -17,7 +17,7 @@ const Banner = () => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <img style={{height:'500px'}}
       className="d-block w-100"
       src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="Second slide"
@@ -29,7 +29,7 @@ const Banner = () => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-    <img
+    <img style={{height:'500px'}}
       className="d-block w-100"
       src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       alt="Third slide"
