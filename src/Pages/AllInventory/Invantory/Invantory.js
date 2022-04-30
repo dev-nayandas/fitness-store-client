@@ -1,15 +1,12 @@
 import React from 'react';
-import { Button, Card, CardGroup } from 'react-bootstrap';
+import { Button, Card, CardGroup, ListGroup, ListGroupItem } from 'react-bootstrap';
 
+const Invantory = ({ inventory }) => {
+    const { name, img, id, price, description, quantity, suplierName } = inventory;
+    return (
+        <div  className='container'>
 
-
-const Inventory = ({ inventory }) => {
-  const { name, img, id, price, description, quantity,suplierName } = inventory;
-  return (
-    <div >
-      <div >
-
-        <div className='row' style={{ width: '300px' }} >
+<div className='row' style={{ width: '300px' }} >
           <CardGroup style={{ width: '300px' }}>
             <Card >
               <Card.Img style={{ width: '300px' }} variant="top" src={img} />
@@ -35,10 +32,8 @@ const Inventory = ({ inventory }) => {
 
           </CardGroup>
         </div>
-      </div>
-
-    </div>
-  );
+        </div>
+    );
 };
 
-export default Inventory;
+export default Invantory;
