@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import app from './firebase.init';
+import {getAuth} from 'firebase/auth'
+import Banner from './Pages/Home/Banner/Banner';
+import Header from './Pages/Home/Header/Header';
+
+
+const auth = getAuth(app)
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header></Header>
+        <Banner></Banner>
+
     </div>
   );
 }
