@@ -42,7 +42,7 @@ const Register = () => {
                     Submit
                 </Button>
             </Form>
-            <p>Already Registed <Link onClick={navigateLogin} className='text-danger pe-auto'>Please Login</Link></p>
+            <p>Already Registed <Link to="/emaillogin" onClick={navigateLogin} className='text-danger pe-auto text-decoration-none'>Please Login</Link></p>
         </div>
     );
 };
