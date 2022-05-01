@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, CardGroup, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 const Invantory = ({ inventory }) => {
-    const { name, img, id, price, description, quantity, suplierName } = inventory;
+    const { name, img, id, price, description, quantity, suplierName, sold } = inventory;
     return (
         <div  className='container'>
 
@@ -11,6 +11,7 @@ const Invantory = ({ inventory }) => {
             <Card >
               <Card.Img style={{ width: '300px' }} variant="top" src={img} />
               <Card.Body >
+                <Card.Title> Id :{id}</Card.Title>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
                   {description}
@@ -24,10 +25,13 @@ const Invantory = ({ inventory }) => {
                 <Card.Text>
                  Suplier Name  : {suplierName}
                 </Card.Text>
+                <Card.Text>
+                 Total Sold  : {sold}
+                </Card.Text>
               </Card.Body>
-              <Card.Footer>
+              {/* <Card.Footer>
                 <Button className='text-white, bg-dark'>Stock Update</Button>
-              </Card.Footer>
+              </Card.Footer> */}
             </Card>
 
           </CardGroup>

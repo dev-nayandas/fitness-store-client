@@ -2,6 +2,7 @@ import React from 'react';
 import AllInventory from '../../AllInventory/AllInventory';
 import Banner from '../Banner/Banner';
 import Customer from '../Customer/Customer';
+import Details from '../Inventories/Details/Details';
 import Inventories from '../Inventories/Inventories';
 import Inventory from '../Inventories/Inventory/Inventory';
 
@@ -15,7 +16,8 @@ const Home = () => {
             <Inventories></Inventories>
             <Customer></Customer>
             <Items></Items>
-            
+    
+
         </div>
     );
 };

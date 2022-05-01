@@ -11,6 +11,11 @@ import Items from './Pages/Home/Items/Items';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
 import AllInventory from './Pages/AllInventory/AllInventory';
+import EmailLogin from './Pages/Home/Login/EmailLogin/EmailLogin';
+import Details from './Pages/Home/Inventories/Details/Details';
+import Detail from './Pages/Home/Inventories/Detail/Detail';
+import ErronPage from './Pages/ErrorPage/ErronPage';
+import Register from './Pages/Home/Login/Register/Register';
 
 
 
@@ -28,6 +33,12 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/allinventory" element={<AllInventory />} />
+      <Route path="/details/:detailsId" element={<Details />} />
+      <Route path="/emaillogin" element={<EmailLogin />} />
+      <Route path="/register" element={<Register />} />
+
+      <Route path="*" element={<ErronPage />} />
+
    
 
       </Routes>

@@ -1,15 +1,22 @@
 import React from 'react';
 import { Button, Card, CardGroup } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import Inventories from '../Inventories';
 
 
 
 const Inventory = ({ inventory }) => {
   const { name, img, id, price, description, quantity,suplierName } = inventory;
+  const navigate = useNavigate()
+  const navigateToInventories = id =>{
+    navigate(`./detail/${id}`)
+  }
   return (
     <div >
-      <div >
+      <div className='container'>
 
         <div className='row' style={{ width: '300px' }} >
+          <div className='col'>
           <CardGroup style={{ width: '300px' }}>
             <Card >
               <Card.Img style={{ width: '300px' }} variant="top" src={img} />
@@ -29,11 +36,12 @@ const Inventory = ({ inventory }) => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button className='text-white, bg-dark'>Stock Update</Button>
+                <Button onClick={() =>navigateToInventories(id)} className='text-white, bg-dark'>Stock Update</Button>
               </Card.Footer>
             </Card>
 
           </CardGroup>
+          </div>
         </div>
       </div>
 

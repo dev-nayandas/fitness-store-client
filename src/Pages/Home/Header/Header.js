@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <div>
+        <div className='mb-0'>
             <>
   <Navbar bg="dark" variant="dark">
     <Container>
@@ -13,6 +13,7 @@ const Header = () => {
       <Nav.Link href="/home">Home</Nav.Link>
     
       <Nav.Link href="allinventory">Inventory</Nav.Link>
+      <Nav.Link href="emaillogin">Login</Nav.Link>
     </Nav>
     </Container>
   </Navbar>
