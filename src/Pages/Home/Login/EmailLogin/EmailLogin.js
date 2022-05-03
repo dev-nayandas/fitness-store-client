@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const EmailLogin = () => {
   const emailRef = useRef('');
@@ -40,7 +41,8 @@ const EmailLogin = () => {
           Submit
         </Button>
       </Form>
-      <p>New to fitness Store. <Link to="/register" className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
+      <p>New to fitness Store. <Link to="/register" className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p> <br></br> Or
+      <GoogleLogin></GoogleLogin>
     </div>
   );
 };

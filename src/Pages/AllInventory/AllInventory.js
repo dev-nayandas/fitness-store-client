@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import Invantory from '../AllInventory/Invantory/Invantory';
 
 const AllInventory = () => {
@@ -20,6 +21,7 @@ const AllInventory = () => {
                     ></Invantory>)
                 }
             </div>
+            <Button className='mt-5'>Add New Item</Button>
         </div>
     );
 };

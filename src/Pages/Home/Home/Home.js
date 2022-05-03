@@ -1,5 +1,6 @@
 import React from 'react';
 import AllInventory from '../../AllInventory/AllInventory';
+import ManageInventories from '../../ManageInventories/ManageInventories';
 import Banner from '../Banner/Banner';
 import Customer from '../Customer/Customer';
 import Details from '../Inventories/Details/Details';
@@ -14,6 +15,7 @@ const Home = () => {
 
             <Banner></Banner>
             <Inventories></Inventories>
+            <ManageInventories></ManageInventories>
             <Customer></Customer>
             <Items></Items>
           

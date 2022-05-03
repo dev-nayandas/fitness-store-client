@@ -6,7 +6,7 @@
         "quantity": "200pcs",
         "suplierName": "Danish",
         "description": "This service is via zoom app",
-        "img": "https://images.pexels.com/photos/4031818/pexels-photo-4031818.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+        "img": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "sold" : "150 pcs"
     },
     {
@@ -16,7 +16,7 @@
         "quantity": "200pcs",
         "suplierName": "Danish",
         "description": "We can take this service by live consult with me",
-        "img": "https://images.pexels.com/photos/7088833/pexels-photo-7088833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img": "https://images.pexels.com/photos/136404/pexels-photo-136404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "sold" : "150 pcs"
     },
     {
@@ -26,7 +26,7 @@
         "quantity": "200pcs",
         "suplierName": "Danish",
         "description": "I will do this surgery with Limited cost",
-        "img": "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img": "https://images.pexels.com/photos/949129/pexels-photo-949129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "sold" : "150 pcs"
     },
     {
@@ -36,7 +36,7 @@
         "quantity": "200pcs",
         "suplierName": "Danish",
         "description": "I will use here modern insrument",
-        "img": "https://images.pexels.com/photos/7089018/pexels-photo-7089018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "img": "https://images.pexels.com/photos/3768913/pexels-photo-3768913.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "sold" : "150 pcs"
     },
     {
@@ -45,9 +45,9 @@
         "price": "$5000",
         "quantity": "200pcs",
         "suplierName": "Danish",
-        "description": "I am first person who is providing this service in Newyork",
-        "img": "https://images.pexels.com/photos/3846009/pexels-photo-3846009.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "sold" : "150 pcs"
+        "description": "I will use here modern insrument",
+        "img" : "https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+         "sold" : "150 pcs"
     },
     {
         "id": 6,
@@ -56,7 +56,7 @@
         "quantity": "200pcs",
         "suplierName": "Danish",
         "description": "I am first person who is providing this service in Newyork",
-        "img": "https://images.pexels.com/photos/3846009/pexels-photo-3846009.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "img": "https://images.pexels.com/photos/4944435/pexels-photo-4944435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "sold" : "150 pcs"
     },
     {
@@ -116,7 +116,7 @@
         "quantity": "200pcs",
         "suplierName": "Danish",
         "description": "I am first person who is providing this service in Newyork",
-        "img": "https://images.pexels.com/photos/3846009/pexels-photo-3846009.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "img": "https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "sold" : "150 pcs"
     }
 ]
