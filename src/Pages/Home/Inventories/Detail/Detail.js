@@ -7,6 +7,7 @@ const Detail = ({detail}) => {
     
 
     const { name, img, id, price, description, quantity,suplierName } = detail;
+    console.log(name)
     const navigate = useNavigate()
     const navigateToDetails = id =>{
          navigate(`./details/${id}`)

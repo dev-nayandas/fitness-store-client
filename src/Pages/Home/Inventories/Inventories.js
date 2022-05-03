@@ -3,6 +3,9 @@ import Inventory from './Inventory/Inventory'
 
 const Inventories = () => {
     const [inventories, setInventories] = useState([]);
+
+
+    
     useEffect(() => {
         fetch('inventories.json')
             .then(res => res.json())
@@ -14,7 +17,7 @@ const Inventories = () => {
            <div className='row'>
            {
                 inventories.slice(0,6).map(inventory=> <Inventory 
-                key= {inventories.id}
+                key= {inventory.id}
                 inventory = {inventory}
                 
                 ></Inventory>)

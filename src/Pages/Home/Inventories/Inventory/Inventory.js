@@ -7,9 +7,10 @@ import Inventories from '../Inventories';
 
 const Inventory = ({ inventory }) => {
   const { name, img, id, price, description, quantity,suplierName } = inventory;
+  
   const navigate = useNavigate()
   const navigateToInventories = id =>{
-    navigate(`./detail/${id}`)
+    navigate('/allinventory/' + id)
   }
   return (
   
