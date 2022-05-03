@@ -21,7 +21,7 @@ import Register from './Pages/Home/Login/Register/Register';
 
 
 
-const auth = getAuth(app)
+// const auth = getAuth(app)
 
 
 function App() {

@@ -4,11 +4,11 @@ import { Button, Card, CardGroup, ListGroup, ListGroupItem } from 'react-bootstr
 const Invantory = ({ inventory }) => {
     const { name, img, id, price, description, quantity, suplierName, sold } = inventory;
     return (
-        <div  className='container'>
+       
 
-<div className='row' style={{ width: '300px' }} >
+<div className='row ' style={{ width: '300px' }} >
           <CardGroup style={{ width: '300px' }}>
-            <Card >
+            <Card  >
               <Card.Img style={{ width: '300px' }} variant="top" src={img} />
               <Card.Body >
                 <Card.Title> Id :{id}</Card.Title>
@@ -36,7 +36,7 @@ const Invantory = ({ inventory }) => {
 
           </CardGroup>
         </div>
-        </div>
+      
     );
 };
 

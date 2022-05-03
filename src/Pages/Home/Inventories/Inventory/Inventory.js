@@ -12,14 +12,14 @@ const Inventory = ({ inventory }) => {
     navigate(`./detail/${id}`)
   }
   return (
-    <div >
-      <div className='container'>
+  
+     
 
-        <div className='row' style={{ width: '300px' }} >
-          <div className='col'>
-          <CardGroup style={{ width: '300px' }}>
+        <div className='row gx-5' style={{ width: '18rem' }} >
+          <div className='col-lg-4 gx-5'>
+          <CardGroup style={{ width: '200px' }}>
             <Card >
-              <Card.Img style={{ width: '300px' }} variant="top" src={img} />
+              <Card.Img style={{ width: '200px' }} variant="top" src={img} />
               <Card.Body >
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
@@ -43,9 +43,9 @@ const Inventory = ({ inventory }) => {
           </CardGroup>
           </div>
         </div>
-      </div>
+     
 
-    </div>
+   
   );
 };
 

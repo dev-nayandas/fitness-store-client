@@ -16,7 +16,7 @@ const Home = () => {
             <Inventories></Inventories>
             <Customer></Customer>
             <Items></Items>
-    
+            
 
         </div>
     );

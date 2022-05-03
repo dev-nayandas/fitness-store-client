@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const EmailLogin = () => {
   const emailRef = useRef('');
@@ -10,6 +10,7 @@ const EmailLogin = () => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
+   
 
   }
 
@@ -39,7 +40,7 @@ const EmailLogin = () => {
           Submit
         </Button>
       </Form>
-      <p>New to fitness Store. <span className='text-danger' onClick={navigateRegister}>Please Register</span> </p>
+      <p>New to fitness Store. <Link to="/register" className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
     </div>
   );
 };

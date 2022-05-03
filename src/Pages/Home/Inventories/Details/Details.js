@@ -12,7 +12,7 @@ const Details = () => {
     },[])
     return ( 
         <div>
-            <h1>Details length{details.id}</h1>
+            <h1>Details length{detailsId}</h1>
             {
 
                 details.slice(0,6).map(detail=><Detail

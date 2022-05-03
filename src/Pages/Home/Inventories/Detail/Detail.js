@@ -9,7 +9,7 @@ const Detail = ({detail}) => {
     const { name, img, id, price, description, quantity,suplierName } = detail;
     const navigate = useNavigate()
     const navigateToDetails = id =>{
-         navigate(`/details/${id}`)
+         navigate(`./details/${id}`)
     }
     return (
         <Card style={{ width: '18rem' }}>

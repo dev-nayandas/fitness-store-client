@@ -9,15 +9,17 @@ const Inventories = () => {
             .then(data => setInventories(data))
     }, [])
     return (
-        <div>
+        <div className='container'>
             <h1> Inventories</h1>
-            {
+           <div className='row'>
+           {
                 inventories.slice(0,6).map(inventory=> <Inventory 
                 key= {inventories.id}
                 inventory = {inventory}
                 
                 ></Inventory>)
             }
+           </div>
         </div>
     );
 };
