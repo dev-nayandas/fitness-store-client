@@ -4,7 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
-import { sendEmailVerification } from 'firebase/auth';
+import { sendEmailVerification, sendPasswordResetEmail } from 'firebase/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const EmailLogin = () => {
@@ -51,6 +53,15 @@ const EmailLogin = () => {
     navigate('/register');
     
   }
+  // Handel password Reset
+  const  handlePasswordReset =() =>{
+    
+    const email = emailRef.current.value;
+    sendPasswordResetEmail(auth, email)
+    .then(() => {
+      toast('Password Reset Link sent')
+    })
+  }
 
 
   
@@ -83,9 +94,11 @@ const EmailLogin = () => {
         <Button variant="primary" type="submit">
           Submit
         </Button>
+        <Button onClick={handlePasswordReset} className='text-decoration-none' variant="link">Forget  Password?</Button>
       </Form>
-      <p>New to fitness Store. <Link to="/register" className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p> <br></br> Or
+      <p>New to fitness Store? <Link to="/register" className='text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p> <br></br> Or
       <GoogleLogin></GoogleLogin>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };
