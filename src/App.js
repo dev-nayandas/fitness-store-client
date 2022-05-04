@@ -16,6 +16,10 @@ import Details from './Pages/Home/Inventories/Details/Details';
 import Detail from './Pages/Home/Inventories/Detail/Detail';
 import ErronPage from './Pages/ErrorPage/ErronPage';
 import Register from './Pages/Home/Login/Register/Register';
+import RequireAuth from './Pages/Home/Login/RequireAuth/RequireAuth';
+import ManageItems from './Pages/ManageItems/ManageItems';
+import MyItems from './Pages/MyItems/MyItems';
+import AddItem from './Pages/AddItem/AddItem';
 
 
 
@@ -35,7 +39,17 @@ function App() {
       <Route path="/allinventory" element={<AllInventory />} />
      
       <Route path="/details" element={<Details />} />
-      <Route path="/allinventory/:detailsId" element={<Details />} />
+      <Route path="/manageitems" element={<ManageItems />} />
+      <Route path="/additem" element={<AddItem />} />
+      <Route path="/myitems" element={<MyItems />} />
+      
+      <Route path="/allinventory/:detailsId" element={
+      <RequireAuth>
+         <Details />
+      </RequireAuth>
+     
+      
+      } />
       <Route path="/emaillogin" element={<EmailLogin />} />
       <Route path="/register" element={<Register />} />
 

@@ -26,7 +26,7 @@ const Details = () => {
 
     return (
         <div >
-            <h1>Invetory Details{detailsId}</h1>
+            <h1>Inventory Details</h1>
             {/* <h1>Invetory Details{items.name}</h1> */}
             {/* <h1>Invetory Details{name}</h1> */}
 

@@ -13,7 +13,7 @@ const Inventories = () => {
     }, [])
     return (
         <div className='container'>
-            <h1> Inventories</h1>
+            <h1 className='mt-5'> Inventories</h1>
            <div className='row'>
            {
                 inventories.slice(0,6).map(inventory=> <Inventory 

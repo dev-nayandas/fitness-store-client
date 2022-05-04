@@ -8,17 +8,26 @@ import auth from '../../../../firebase.init';
 
 const EmailLogin = () => {
 
-
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
 
 
   const emailRef = useRef('');
   const passwordRef = useRef('');
   const navigate = useNavigate()
+
+  if(user){
+    navigate('/details')
+  }
   const handleSubmit = event => {
     event.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-   
+    signInWithEmailAndPassword(email, password)
 
   }
 

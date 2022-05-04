@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap';
 
 const Items = () => {
     return (
-        <div className='mx-auto' style={{height:'300px', width:'800px'}}>
+        <div className='mx-auto mt-5 mb-5' style={{height:'300px', width:'800px'}}>
             <h2>The Items that we have now</h2>
             <Table striped bordered hover variant="dark">
   <thead>
