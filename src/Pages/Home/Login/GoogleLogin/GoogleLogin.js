@@ -8,6 +8,10 @@ const GoogleLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
 
+
+
+    
+
     if (error) {
         return (
           <div>

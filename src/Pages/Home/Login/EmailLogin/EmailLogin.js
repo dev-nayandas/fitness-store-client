@@ -2,8 +2,15 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../../firebase.init';
+
 
 const EmailLogin = () => {
+
+
+
+
   const emailRef = useRef('');
   const passwordRef = useRef('');
   const navigate = useNavigate()
@@ -15,10 +22,16 @@ const EmailLogin = () => {
 
   }
 
+
+  
+
   const navigateRegister = event => {
     navigate('/register');
     
   }
+
+
+  
   return (
     <div className='mx-auto w-50'>
       <Form onSubmit={handleSubmit}>
