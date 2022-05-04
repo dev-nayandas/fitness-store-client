@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+// This is footer
 const Footer = () => {
     return (
         <div  style={{height : "300px", backgroundColor: "#766363" }} >

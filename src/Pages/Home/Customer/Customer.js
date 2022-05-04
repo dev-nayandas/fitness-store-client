@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+// All Brand logo here
 const Customer = () => {
     return (
         <div className='mb-3 mt-5'>

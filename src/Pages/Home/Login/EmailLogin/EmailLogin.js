@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Spinner } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -8,10 +8,11 @@ import { sendEmailVerification, sendPasswordResetEmail } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
+//  emial login handled here
 const EmailLogin = () => {
   const [validated, setValidated] = useState(false);
 
+  //  sign with email
   const [
     signInWithEmailAndPassword,
     user,
@@ -23,11 +24,16 @@ const EmailLogin = () => {
   const emailRef = useRef('');
   const passwordRef = useRef('');
   const navigate = useNavigate()
-
+  if(loading){
+    <Spinner animation="border" variant="primary" />
+  }
   if(user){
     navigate('/details');
    
   }
+  // submit button handled here
+
+
   const handleSubmit = event => {
   
 
@@ -63,7 +69,7 @@ const EmailLogin = () => {
     })
   }
 
-
+// email login from
   
   return (
     <div className='mx-auto w-50'>

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import Inventories from '../Inventories';
 
 
+// Inventory destructure here
+
 
 const Inventory = ({ inventory }) => {
   const { name, img, id, price, description, quantity,suplierName } = inventory;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import AllInventory from '../../AllInventory/AllInventory';
 import ManageInventories from '../../ManageInventories/ManageInventories';
 import Banner from '../Banner/Banner';
@@ -10,6 +11,9 @@ import Inventory from '../Inventories/Inventory/Inventory';
 import Items from '../Items/Items';
 
 const Home = () => {
+    if(Home === 0){
+        <Spinner animation="border" variant="primary" />
+    }
     return (
         <div>
 

@@ -5,6 +5,8 @@ const Inventories = () => {
     const [inventories, setInventories] = useState([]);
 
 
+    // data loaded here
+
     
     useEffect(() => {
         fetch('inventories.json')

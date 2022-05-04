@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Spinner } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
@@ -8,9 +8,12 @@ import { sendEmailVerification } from 'firebase/auth';
 
 
 
-
+// Rgistration handled here
 const Register = () => {
 
+
+
+    // user creted here
     const [
         createUserWithEmailAndPassword,
         user,
@@ -22,6 +25,9 @@ const Register = () => {
     const passwordRef = useRef('');
     const navigate = useNavigate();
 
+
+    // handle submit button
+
     const handleSubmit = event => {
         event.preventDefault()
         const email = emailRef.current.value;
@@ -29,27 +35,30 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password)
 
     }
-
-    const verifyEmail =() =>{
+    // email verification
+    const verifyEmail = () => {
         sendEmailVerification(auth.currentUser)
-        .then(()=>{
-          console.log('email verification  sent')
-        })
-      }
+            .then(() => {
+                console.log('email verification  sent')
+            })
+    }
 
     const navigateLogin = event => {
         navigate('/emaillogin')
 
     }
-    if(user){
+    if(loading){
+        <Spinner animation="border" variant="primary" />
+    }
+    if (user) {
         verifyEmail()
         navigate('/details');
-       
+
     }
-   
 
-  
 
+
+// Registration from
 
     return (
         <div className='w-25 mx-auto'>
