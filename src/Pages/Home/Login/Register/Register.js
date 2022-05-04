@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
+import { sendEmailVerification } from 'firebase/auth';
 
 
 
@@ -28,14 +29,27 @@ const Register = () => {
         createUserWithEmailAndPassword(email, password)
 
     }
+
+    const verifyEmail =() =>{
+        sendEmailVerification(auth.currentUser)
+        .then(()=>{
+          console.log('email verification  sent')
+        })
+      }
+
     const navigateLogin = event => {
         navigate('/emaillogin')
 
     }
     if(user){
-        navigate('/details')
+        verifyEmail()
+        navigate('/details');
+       
     }
    
+
+  
+
 
     return (
         <div className='w-25 mx-auto'>

@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <div className='mb-0'>
+    <div style={{height:'53px'}} className='mb-0'>
       <>
         <Navbar bg="dark" variant="dark">
           <Container>

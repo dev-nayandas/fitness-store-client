@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
+import { sendEmailVerification } from 'firebase/auth';
 
 
 const EmailLogin = () => {
@@ -22,9 +23,11 @@ const EmailLogin = () => {
   const navigate = useNavigate()
 
   if(user){
-    navigate('/details')
+    navigate('/details');
+   
   }
   const handleSubmit = event => {
+  
 
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
