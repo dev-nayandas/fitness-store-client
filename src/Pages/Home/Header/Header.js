@@ -1,3 +1,4 @@
+
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
@@ -10,9 +11,10 @@ const Header = () => {
   const [user] = useAuthState(auth);
 
   const handleSignOut = () => {
-    signOut(auth)
+   signOut(auth)
 
-  }
+  };
+
   return (
     <div className='mb-0'>
       <>
