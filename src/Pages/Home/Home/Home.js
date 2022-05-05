@@ -1,5 +1,6 @@
 import React from 'react';
 import { Spinner } from 'react-bootstrap';
+import Addiventory from '../../AddInventory/Addiventory';
 import AllInventory from '../../AllInventory/AllInventory';
 import ManageInventories from '../../ManageInventories/ManageInventories';
 import Banner from '../Banner/Banner';
@@ -22,6 +23,7 @@ const Home = () => {
             <ManageInventories></ManageInventories>
             <Customer></Customer>
             <Items></Items>
+            
           
             
 

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Form, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import ManageInventories from '../../../ManageInventories/ManageInventories';
 import Detail from '../Detail/Detail';
 
 const Details = () => {
@@ -54,13 +55,14 @@ const Details = () => {
             </div>
             <div className='mx-auto w-50 mt-5'>
                 <>
-                    <Form.Group className="mb-3">
+                    <Form.Group className="mb-2">
                         <Form.Label>Restock the item</Form.Label>
                         <Form.Control placeholder="Enter Restock Quantity"  />
                     </Form.Group>
                     
                    
                     <Button type="submit">Submit</Button>
+                    <ManageInventories></ManageInventories>
                 </>
             </div>
 

@@ -21,6 +21,7 @@ import ManageItems from './Pages/ManageItems/ManageItems';
 import MyItems from './Pages/MyItems/MyItems';
 import AddItem from './Pages/AddItem/AddItem';
 import Blogs from './Pages/Home/Blogs/Blogs';
+import Addiventory from './Pages/AddInventory/Addiventory';
 
 
 
@@ -44,6 +45,8 @@ function App() {
       <Route path="/additem" element={<AddItem />} />
       <Route path="/myitems" element={<MyItems />} />
       <Route path="/blogs" element={<Blogs />} />
+      <Route path="/addiventory" element={<Addiventory />} />
+     
 
       
       <Route path="/allinventory/:detailsId" element={

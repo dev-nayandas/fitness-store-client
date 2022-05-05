@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, CardGroup, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 
 const Invantory = ({ inventory }) => {
     const { name, img, id, price, description, quantity, suplierName, sold } = inventory;
+ 
     return (
        
 

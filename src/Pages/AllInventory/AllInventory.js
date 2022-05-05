@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import Addiventory from '../AddInventory/Addiventory';
 import Invantory from '../AllInventory/Invantory/Invantory';
 
 const AllInventory = () => {
     const [inventories, setInventories] = useState([]);
+    
     useEffect(() => {
-        fetch('inventories.json')
+        fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => setInventories(data))
     }, [])
@@ -21,7 +23,8 @@ const AllInventory = () => {
                     ></Invantory>)
                 }
             </div>
-            <Button className='mt-5 mb-5'>Add New Item</Button>
+           
+            <Addiventory></Addiventory>
         </div>
     );
 };

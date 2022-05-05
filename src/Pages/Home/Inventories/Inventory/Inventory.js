@@ -20,7 +20,7 @@ const Inventory = ({ inventory }) => {
 
         <div className='Row gx-5' style={{ width: '18rem',marginRight:'40px', marginLeft:"40px" ,marginBottom:"40px"}} >
           <div className='Col-lg-3 '>
-          <CardGroup className='ms-5 mt-3' style={{ width: '300px ', height:'500px'}}>
+          <CardGroup className='ms-5 mt-3' style={{ width: '300px ', height:'560px'}}>
             <Card className='mt-4'>
               <Card.Img style={{ width: '300px' }} variant="top" src={img} />
               <Card.Body >

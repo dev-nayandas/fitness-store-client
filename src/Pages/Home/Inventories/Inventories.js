@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Addiventory from '../../AddInventory/Addiventory';
 import Inventory from './Inventory/Inventory'
 
 const Inventories = () => {
@@ -27,6 +28,7 @@ const Inventories = () => {
             }
            </div>
           </div>
+         
         </div>
     );
 };
