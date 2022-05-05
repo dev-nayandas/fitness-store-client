@@ -11,8 +11,8 @@ const AllInventory = () => {
     }, [])
     return (
         <div className='container'>
-            <h1> Inventories</h1>
-            <div className='row'>
+            <h1 style={{marginTop:"40px"}}> Inventories</h1>
+            <div className='row gx-2'>
                 {
                     inventories.map(inventory => <Invantory
                         key={inventory.id}

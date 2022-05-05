@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const ManageInventories = () => {
     return (
-        <div className='mt-3'>
-            <Link className='text-decoration-none bg-info p-2' to='/allinventory'>Manage Inventories</Link>
+        <div className='mt-5'>
+            <Link style={{backgroundColor:"#452e06"}} className='text-decoration-none text-white p-2' to='/allinventory'>Manage Inventories</Link>
         </div>
     );
 };

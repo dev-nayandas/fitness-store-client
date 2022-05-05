@@ -6,7 +6,7 @@ const Invantory = ({ inventory }) => {
     return (
        
 
-<div className='row ' style={{ width: '300px' }} >
+<div className='row ' style={{ width: '300px' , marginTop:"40px"}} >
           <CardGroup style={{ width: '300px' }}>
             <Card  >
               <Card.Img style={{ width: '300px' }} variant="top" src={img} />

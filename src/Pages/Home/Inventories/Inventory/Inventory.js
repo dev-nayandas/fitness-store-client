@@ -18,11 +18,11 @@ const Inventory = ({ inventory }) => {
   
      
 
-        <div className='row gx-5' style={{ width: '18rem' }} >
-          <div className='col-lg-4 gx-5'>
-          <CardGroup className='ms-5 mt-3' style={{ width: '200px ', height:'500px'}}>
+        <div className='Row gx-5' style={{ width: '18rem',marginRight:'40px', marginLeft:"40px" ,marginBottom:"40px"}} >
+          <div className='Col-lg-3 '>
+          <CardGroup className='ms-5 mt-3' style={{ width: '300px ', height:'500px'}}>
             <Card className='mt-4'>
-              <Card.Img style={{ width: '200px' }} variant="top" src={img} />
+              <Card.Img style={{ width: '300px' }} variant="top" src={img} />
               <Card.Body >
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
