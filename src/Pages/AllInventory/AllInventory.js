@@ -21,7 +21,7 @@ const AllInventory = () => {
                     ></Invantory>)
                 }
             </div>
-            <Button className='mt-5'>Add New Item</Button>
+            <Button className='mt-5 mb-5'>Add New Item</Button>
         </div>
     );
 };

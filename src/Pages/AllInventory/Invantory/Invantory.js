@@ -7,11 +7,11 @@ const Invantory = ({ inventory }) => {
        
 
 <div className='row ' style={{ width: '300px' , marginTop:"40px"}} >
-          <CardGroup style={{ width: '300px' }}>
+          <CardGroup >
             <Card  >
-              <Card.Img style={{ width: '300px' }} variant="top" src={img} />
+              <Card.Img  variant="top" src={img} />
               <Card.Body >
-                <Card.Title> Id :{id}</Card.Title>
+                <Card.Title> {id}</Card.Title>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
                   {description}
@@ -29,9 +29,9 @@ const Invantory = ({ inventory }) => {
                  Total Sold  : {sold}
                 </Card.Text>
               </Card.Body>
-              {/* <Card.Footer>
-                <Button className='text-white, bg-dark'>Stock Update</Button>
-              </Card.Footer> */}
+              <Card.Footer>
+                <Button className='text-white, bg-dark w-100'>Delete</Button>
+              </Card.Footer>
             </Card>
 
           </CardGroup>
