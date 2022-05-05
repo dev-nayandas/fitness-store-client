@@ -15,7 +15,7 @@ const Details = () => {
 
     useEffect(() => {
 
-        const url = `http://localhost:3000/allinventory/${detailsId}`;
+        const url = `http://localhost:5000/inventory/${detailsId}`;
         console.log(url)
         fetch(url)
             .then(res => res.json())
@@ -33,18 +33,19 @@ const Details = () => {
 
             <div className='mt-5 mx-auto w-25 '>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                    <Card.Img variant="top" src={items.img} />
                     <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
+                        <Card.Title>{items.name}</Card.Title>
                         <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                           {items.description}
+                         
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
-                        <ListGroupItem>Quantity : 100</ListGroupItem>
-                        <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-                        <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                        <ListGroupItem>Id: {items._id}</ListGroupItem>
+                        <ListGroupItem>Quantity: {items.quantity}</ListGroupItem>
+                        <ListGroupItem> Price: {items.price}</ListGroupItem>
+                        <ListGroupItem>Suplier Name : {items.suplierName}</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
                         <Button >Delivered</Button>

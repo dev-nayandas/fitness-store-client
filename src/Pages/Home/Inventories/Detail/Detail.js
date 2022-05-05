@@ -6,7 +6,7 @@ import Details from '../Details/Details';
 const Detail = ({detail}) => {
     
 
-    const { name, img, id, price, description, quantity,suplierName } = detail;
+    const { name, img, _id, price, description, quantity,suplierName } = detail;
     console.log(name)
     const navigate = useNavigate()
     const navigateToDetails = id =>{
@@ -22,13 +22,13 @@ const Detail = ({detail}) => {
     </Card.Text>
   </Card.Body>
   <ListGroup className="list-group-flush">
-    <ListGroupItem>Id : {id}</ListGroupItem>
+    <ListGroupItem>Id : {_id}</ListGroupItem>
     <ListGroupItem>Quantity : {quantity}</ListGroupItem>
     <ListGroupItem>Suplier Name : {suplierName}</ListGroupItem>
     <ListGroupItem>Price : {price}</ListGroupItem>
   </ListGroup>
   <Card.Body>
-    <Button onClick={()=> navigateToDetails(id)} >Stock Update</Button>
+    <Button onClick={()=> navigateToDetails(_id)} >Stock Update</Button>
   </Card.Body>
 </Card>
     );
