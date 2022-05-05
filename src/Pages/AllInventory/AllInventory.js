@@ -10,14 +10,14 @@ const AllInventory = () => {
         fetch('http://localhost:5000/inventory')
             .then(res => res.json())
             .then(data => setInventories(data))
-    }, [])
+    }, [inventories, setInventories])
     return (
         <div className='container'>
             <h1 style={{marginTop:"40px"}}> Inventories</h1>
             <div className='row gx-2'>
                 {
                     inventories.map(inventory => <Invantory
-                        key={inventory.id}
+                        key={inventory._id}
                         inventory={inventory}
 
                     ></Invantory>)

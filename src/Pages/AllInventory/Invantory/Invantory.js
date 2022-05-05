@@ -3,7 +3,30 @@ import { Button, Card, CardGroup, ListGroup, ListGroupItem } from 'react-bootstr
 import { useParams } from 'react-router-dom';
 
 const Invantory = ({ inventory }) => {
-    const { name, img, id, price, description, quantity, suplierName, sold } = inventory;
+  const [inventories, setInventories] = useState([]);
+    const { name, img, _id, price, description, quantity, suplierName, sold } = inventory;
+
+
+
+
+
+    const handleDelete = id =>{
+      const proceed = window.confirm('Are You Sure to delete the inventory')
+      if(proceed){
+        const url = `http://localhost:5000/inventory/${id}`;
+        fetch(url, {
+          method: 'DELETE'
+        })
+        .then(res=>res.json())
+        .then(data=>{
+          console.log(data)
+          const remaining = inventories.filter(inventory=>inventory._id !== id);
+          console.log(remaining)
+          setInventories(remaining)
+        })
+        
+      }
+    }
  
     return (
        
@@ -13,7 +36,7 @@ const Invantory = ({ inventory }) => {
             <Card  >
               <Card.Img  variant="top" src={img} />
               <Card.Body >
-                <Card.Title> {id}</Card.Title>
+                {/* <Card.Title>Id: {_id}</Card.Title> */}
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
                   {description}
@@ -32,7 +55,7 @@ const Invantory = ({ inventory }) => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button className='text-white, bg-dark w-100'>Delete</Button>
+                <Button onClick={()=>handleDelete(_id)} className='text-white, bg-dark w-100'>Delete</Button>
               </Card.Footer>
             </Card>
 
