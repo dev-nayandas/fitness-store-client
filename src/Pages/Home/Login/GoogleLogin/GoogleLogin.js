@@ -23,7 +23,7 @@ const GoogleLogin = () => {
         navigate('/details')
       }
     return (
-        <div>
+        <div className='mb-5'>
            <Button onClick={()=>signInWithGoogle()} className='mx-auto p-2 bg-dark'>Sign in with Google</Button> 
         </div>
     );

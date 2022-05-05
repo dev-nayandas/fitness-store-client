@@ -16,8 +16,8 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Largest Stock</h3>
+            <p>We have largest stock of world famous Gym eqruipment</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -28,8 +28,8 @@ const Banner = () => {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Manage Your Store</h3>
+            <p>You can manage your items easily. Our company offer you best deals for you</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
