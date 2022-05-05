@@ -8,7 +8,7 @@ import Inventories from '../Inventories';
 
 
 const Inventory = ({ inventory }) => {
-  const { name, img, id, price, description, quantity,suplierName } = inventory;
+  const { name, img, _id, price, description, quantity,suplierName } = inventory;
   
   const navigate = useNavigate()
   const navigateToInventories = id =>{
@@ -39,7 +39,7 @@ const Inventory = ({ inventory }) => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer>
-                <Button onClick={() =>navigateToInventories(id)} className='text-white, bg-dark'>Stock Update</Button>
+                <Button onClick={() =>navigateToInventories(_id)} className='text-white, bg-dark'>Stock Update</Button>
               </Card.Footer>
             </Card>
 
