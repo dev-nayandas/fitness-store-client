@@ -12,13 +12,13 @@ const RequireAuth = ({children}) => {
         <Spinner animation="border" variant="primary" />
     }
     if(user){
-      
-        navigate('/details')
+       <Navigate to="/details" state={{ from: location }} replace />;
+        // navigate('/details')
     }
     if(!user){
         
-        navigate('/emaillogin')
-        // <Navigate to="/emaillogin" state={{ from: location }} replace />;
+        // navigate('/emaillogin')
+        <Navigate to="/emaillogin" state={{ from: location }} replace />;
     }
     return children
 };
