@@ -38,8 +38,8 @@ const Details = () => {
                     <Card.Body>
                         <Card.Title>{items.name}</Card.Title>
                         <Card.Text>
-                           {items.description}
-                         
+                            {items.description}
+
                         </Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
@@ -57,10 +57,10 @@ const Details = () => {
                 <>
                     <Form.Group className="mb-2">
                         <Form.Label>Restock the item</Form.Label>
-                        <Form.Control placeholder="Enter Restock Quantity"  />
+                        <Form.Control placeholder="Enter Restock Quantity" />
                     </Form.Group>
-                    
-                   
+
+
                     <Button type="submit">Submit</Button>
                     <ManageInventories></ManageInventories>
                 </>
