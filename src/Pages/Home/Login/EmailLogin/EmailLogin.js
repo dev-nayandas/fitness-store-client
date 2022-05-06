@@ -28,7 +28,7 @@ const EmailLogin = () => {
     <Spinner animation="border" variant="primary" />
   }
   if(user){
-    navigate('/details');
+    navigate('/home');
    
   }
   // submit button handled here
