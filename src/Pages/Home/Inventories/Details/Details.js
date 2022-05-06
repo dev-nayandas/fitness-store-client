@@ -16,7 +16,7 @@ const Details = () => {
 
     useEffect(() => {
 
-        const url = `http://localhost:5000/inventory/${detailsId}`;
+        const url = `https://polar-brook-99260.herokuapp.com/inventory/${detailsId}`;
         console.log(url)
         fetch(url)
             .then(res => res.json())
